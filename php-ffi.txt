@@ -1,0 +1,2 @@
+https://github.com/Gemorroj/Archive7z/issues/14
+https://www.php.net/manual/en/ziparchive.setencryptionname.php

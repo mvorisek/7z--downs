@@ -1,0 +1,19 @@
+# install 
+apt-get install p7zip-full
+which 7z --> /usr/bin/7z --> "#! /bin/sh\nexec /usr/lib/p7zip/7z "$@""
+
+# display .so dependencies (7z.so seems to be statically compiled)
+readelf -d /usr/lib/p7zip/7z | grep 'NEEDED'
+
+# display .so/.ddl methods
+nm -D /usr/lib/p7zip/7z.so
+
+# examples of usage
+# own client - 7z1900-src\CPP\7zip\UI\Client7z
+# 7z console - 7z1900-src\CPP\7zip\UI\Console
+
+
+# some examples
+https://github.com/stonewell/lib7zip
+https://sourceforge.net/p/sevenzip/discussion/45797/thread/ae4f4af6f0/
+https://sourceforge.net/p/sevenzip/discussion/45797/thread/fe944e47/
